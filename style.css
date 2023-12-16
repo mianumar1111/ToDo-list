@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+body{
+    background: radial-gradient(circle, rgba(35,197,199,1) 0%, rgba(253,187,45,1) 100%);
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: white;
+    width: 40%;
+    border-radius: 20px;
+    margin: 10%;
+    padding: 2%;
+}
+.searchBox{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.btn{
+    width: 70px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(255, 157, 30);
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    border: 1px solid rgb(226, 224, 224);
+    border-radius: 20px;
+    font-size: 17px;
+    padding: 12px 8px 16px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin: 2px;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: rgb(121, 119, 119);
+}
+
+.chbox{
+    position:absolute;
+    left: 10px;
+    top: 10px;
+    width: 30px;
+}
+
+.chboxN{
+    /* background-color: aquamarine; */
+    border-radius: 10px;
+    background-image: url(checked.png);
+    background-size: cover;
+}
+ul li button{
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    width: auto;
+    height: 40px;
+    border-radius: 30%;
+    text-align: center;
+    cursor: pointer;
+}
+
+ul li button:hover{
+    background-color: #edeef0;
+}
+
+.Contact{
+    color: black;
+    margin: 90px;
+    padding: 10px;
+    list-style: none;
+    border: 6px double white;
+    width:auto;
+}
+h2{
+    margin-left: 0;
+    background: #46CFCA;
+    background: linear-gradient(to left, #46CFCA 0%, #CFED58 61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+        
+}
+.Contact li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.maincontainer{
+    display: flex;
+}
+@media (max-width: 1000px) {
+    .maincontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .Contact{
+        color: black;
+        margin: 20px;
+        padding: 10px;
+        list-style: none;
+        border: 6px double white;
+        width:80%;
+    }
+    h2{
+        margin-left: 0;
+    }
+    .Contact li a{
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .container{
+        background-color: white;
+        width: 80%;
+        border-radius: 20px;
+        margin: 10%;
+        padding: 2%;
+    }
+}
+@media (max-width: 500px) {
+    .container{
+        background-color: white;
+        width: auto;
+        border-radius: 20px;
+        margin: 10%;
+        padding: 2%;
+    }
+}
